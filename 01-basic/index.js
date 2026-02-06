@@ -159,21 +159,21 @@
 // const express = require('express');
 // const _ = require('lodash');
 
-// import _ from 'lodash';
-// import express from 'express';
+import _ from 'lodash';
+import express from 'express';
 
-// const app = express();
+const app = express();
 
-// app.get('/', (req, res) => {
+app.get('/', (req, res) => {
   
-// const sum = _.sum([1,2,3,4,5,6,7,8,9,10]);
-//   console.log(sum);
-//   res.send(`Hello Node.js Serveeeeeerrrrrrrrssssss! ${sum}`);
-// });
+const sum = _.sum([1,2,3,4,5,6,7,8,9,10]);
+  console.log(sum);
+  res.send(`Hello Node.js Serveeeeeerrrrrrrrssssss! ${sum}`);
+});
 
-// app.listen(3000, () => {
-//   console.log('Server running on http://localhost:3000');
-// });
+app.listen(3000, () => {
+  console.log('Server running on http://localhost:3000');
+});
 
 
 
