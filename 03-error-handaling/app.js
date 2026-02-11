@@ -54,7 +54,7 @@ app.get('/', (req, res) => {
 });
 
 
-/// ----- this store in the fruits .js 
+/// ----- this store in the fruits .js --------////
 
 // app.get('/vegetables',(req,res) => {
 //     res.send(db.vegetables);
