@@ -3,6 +3,8 @@ import db from "./db2.json" with { type: "json" };
 import * as z from "zod";
 import ErrorHandle from "./ErrorHandle.js";
 
+import prisma from "./prisma-client.js";
+
 
 const port = Number(process.env.PORT) || 8081;
 
@@ -13,21 +15,39 @@ if(port && isNaN(port)){
 
 const app = express();
 
+
+
 // for sanitizing data / checking data is it in json format ?
 app.use(express.json());
 
 // bigginer rout
-app.get("/",(req,res) => {
-    const hello = {title:"DB connection"};
-    res.send(hello);
+app.get("/", async (req,res) => {
+    const fruits = await prisma.fruits.findMany();
+    // const hello = {title:"DB connection"};
+    // res.send(hello);
+    res.send(fruits);
 });
+
 
 // Schema for validating fruit
 const fruitsSchema = z.object({
-    id: z.number(),
+    // id: z.number(),
     name: z.string(),
     quantity: z.number()
 })
+
+/// post method using actual data base 
+app.post('/fruitaddindb',async (req,res)=>{
+    const body = fruitsSchema.parse(req.body);
+    const responseFromdb = await prisma.fruits.create({
+        data:{
+            name: body.name,
+            qt: body.quantity
+        },
+});
+    console.log('post body is = ',body);
+    res.json(responseFromdb); 
+});
 
 
 app.post('/fruitadd',(req,res)=>{
