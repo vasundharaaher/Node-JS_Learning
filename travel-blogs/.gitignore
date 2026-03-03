@@ -1,3 +1,4 @@
 node_modules
 /generated/prisma
-/src/generated/prisma
+/public
+/logs/error-log.txt
