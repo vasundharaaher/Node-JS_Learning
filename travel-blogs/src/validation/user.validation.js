@@ -1,3 +1,3 @@
-import { registerSchema } from './auth.validation';
+import { registerSchema } from '#validation/auth.validation';
 
-export const updateBlogSchema = registerSchema.partial();
+export const updateUserSchema = registerSchema.partial();

@@ -3,30 +3,44 @@ import express from 'express';
 import notfound from '#middlewares/notFound.middleware';
 import requestLogger from '#middlewares/request-logger.middleware';
 import { numberSchema } from '#validation/common.validation';
-import PI from '#constants/constant';
+// import PI from '#constants/constant';
 import errorHandlerMiddleware from '#middlewares/error-handler.middleware';
 import authRouter from '#routers/auth.route';
 import blogRouter from '#routers/blog.route';
 // console.log(PI);
+import cors from 'cors';
+import helmet from 'helmet';
+import jwtmiddleware from '#middlewares/jwt-handle.middleware';
+import userRoute from '#routers/user.route';
+import bookingRoute from '#routers/booking.route';
 
 const app = express();
 
-// let abcd = 'test';
+const startingBaseURL = '/api/v1/';
+app.use(
+        cors(),
+        helmet({
+                crossOriginEmbedderPolicy: false,
+                crossOriginResourcePolicy: { policy: 'cross-origin' },
+                contentSecurityPolicy: false, // Only if whitelisting (Step 3) doesn't work
+        }),
+        express.json(),
+        requestLogger
+);
+app.use(`${startingBaseURL}assets`, express.static('./public'));
 
-app.use(notfound);
-app.use(errorHandlerMiddleware);
-
-app.use(express.json());
+// app.use(express.json());
 app.use(requestLogger);
 // app.use(authRouter);
-app.use('/api/v1/auth', authRouter);
-app.use('/api/v1/app', blogRouter);
+app.use(`${startingBaseURL}auth`, authRouter);
+app.use(`${startingBaseURL}app`, jwtmiddleware, blogRouter);
+app.use(`${startingBaseURL}app`, jwtmiddleware, userRoute);
+app.use(`${startingBaseURL}app`, jwtmiddleware, bookingRoute);
 
 const PORT = process.env.PORT;
 
 // parsing port from that schema
 // const portNumber =  numberSchema.parse(PORT);
-// error not show
 const portNumber = numberSchema.safeParse(PORT);
 
 if (portNumber.error) {
@@ -34,6 +48,9 @@ if (portNumber.error) {
         process.exit(1);
 }
 
+// error not show
+app.use(notfound);
+app.use(errorHandlerMiddleware);
 // listening port locally
 app.listen(PORT, () => {
         console.log(`Server started at http://localhost:${portNumber.data}`);

@@ -17,7 +17,7 @@ export default (err, req, res, next) => {
                 return res.status(400).json({
                         success: false,
                         msg: 'Invailid request object',
-                        issues: z.prettifyError(err),
+                        error: z.prettifyError(err),
                 });
         }
         const path = './logs/error-log.txt';

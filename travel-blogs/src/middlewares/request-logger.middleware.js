@@ -1,6 +1,7 @@
 // not found
 export default (req, res, next) => {
-   console.log(`${req.method} - ${req.url}`);
-   next();
+        if (process.env.NODE_ENV == 'development') {
+                console.log(`${req.method} - ${req.url}`);
+        }
+        next();
 };
-

@@ -1,1 +1,139 @@
 /n/n {}/n/n {}/n/n {}/n/n {}/n/n {}/n/n {}/n/n {}/n/n {"name":"DriverAdapterError","cause":{"originalCode":"45028","originalMessage":"pool timeout: failed to retrieve a connection from pool after 10010ms\n    (pool connections: active=0 idle=0 limit=5)","kind":"mysql","code":45028,"message":"pool timeout: failed to retrieve a connection from pool after 10010ms\n    (pool connections: active=0 idle=0 limit=5)","state":"HY000","cause":"connect ECONNREFUSED ::1:3306"},"clientVersion":"7.4.0"}/n/n {"code":"P2002","meta":{"modelName":"users","driverAdapterError":{"name":"DriverAdapterError","cause":{"originalCode":"1062","originalMessage":"Duplicate entry 'hello@world.com' for key 'email_UNIQUE'","kind":"UniqueConstraintViolation","constraint":{"index":"email_UNIQUE"}}}},"clientVersion":"7.4.0","name":"PrismaClientKnownRequestError"}/n/n {}/n/n {}/n/n {}/n/n {}/n/n {}
+
+ {"name":"DriverAdapterError","cause":{"originalCode":"45028","originalMessage":"pool timeout: failed to retrieve a connection from pool after 10012ms\n    (pool connections: active=0 idle=0 limit=5)","kind":"mysql","code":45028,"message":"pool timeout: failed to retrieve a connection from pool after 10012ms\n    (pool connections: active=0 idle=0 limit=5)","state":"HY000","cause":"connect ECONNREFUSED ::1:3306"},"clientVersion":"7.4.0"}
+
+ {}
+
+ {}
+
+ {}
+
+ {}
+
+ {"name":"DriverAdapterError","cause":{"originalCode":"45028","originalMessage":"pool timeout: failed to retrieve a connection from pool after 10008ms\n    (pool connections: active=0 idle=0 limit=5)","kind":"mysql","code":45028,"message":"pool timeout: failed to retrieve a connection from pool after 10008ms\n    (pool connections: active=0 idle=0 limit=5)","state":"HY000","cause":"connect ECONNREFUSED ::1:3306"},"clientVersion":"7.4.0"}
+
+ {"name":"DriverAdapterError","cause":{"originalCode":"45028","originalMessage":"pool timeout: failed to retrieve a connection from pool after 10008ms\n    (pool connections: active=0 idle=0 limit=5)","kind":"mysql","code":45028,"message":"pool timeout: failed to retrieve a connection from pool after 10008ms\n    (pool connections: active=0 idle=0 limit=5)","state":"HY000","cause":"connect ECONNREFUSED ::1:3306"},"clientVersion":"7.4.0"}
+
+ {}
+
+ {}
+
+ {}
+
+ {}
+
+ {}
+
+ {"name":"DriverAdapterError","cause":{"originalCode":"45028","originalMessage":"pool timeout: failed to retrieve a connection from pool after 10007ms\n    (pool connections: active=0 idle=0 limit=5)","kind":"mysql","code":45028,"message":"pool timeout: failed to retrieve a connection from pool after 10007ms\n    (pool connections: active=0 idle=0 limit=5)","state":"HY000","cause":"connect ECONNREFUSED ::1:3306"},"clientVersion":"7.4.0"}
+
+ {}
+
+ {}
+
+ {}
+
+ {}
+
+ {}
+
+ {}
+
+ {}
+
+ {"code":"P2002","meta":{"modelName":"users","driverAdapterError":{"name":"DriverAdapterError","cause":{"originalCode":"1062","originalMessage":"Duplicate entry 'hello@world.com' for key 'email_UNIQUE'","kind":"UniqueConstraintViolation","constraint":{"index":"email_UNIQUE"}}}},"clientVersion":"7.4.0","name":"PrismaClientKnownRequestError"}
+
+ {}
+
+ {"name":"JsonWebTokenError","message":"jwt must be provided"}
+
+ {"name":"JsonWebTokenError","message":"jwt must be provided"}
+
+ {"name":"JsonWebTokenError","message":"invalid token"}
+
+ {"name":"JsonWebTokenError","message":"invalid token"}
+
+ {"name":"JsonWebTokenError","message":"invalid token"}
+
+ {"code":"ERR_HTTP_HEADERS_SENT"}
+
+ {"code":"ERR_HTTP_HEADERS_SENT"}
+
+ {"name":"JsonWebTokenError","message":"invalid signature"}
+
+ {"name":"PrismaClientValidationError","clientVersion":"7.4.0"}
+
+ {"name":"DriverAdapterError","cause":{"originalCode":"45028","originalMessage":"pool timeout: failed to retrieve a connection from pool after 10016ms\n    (pool connections: active=0 idle=0 limit=5)","kind":"mysql","code":45028,"message":"pool timeout: failed to retrieve a connection from pool after 10016ms\n    (pool connections: active=0 idle=0 limit=5)","state":"HY000","cause":"connect ECONNREFUSED ::1:3306"},"clientVersion":"7.4.0"}
+
+ {"name":"DriverAdapterError","cause":{"originalCode":"45028","originalMessage":"pool timeout: failed to retrieve a connection from pool after 10011ms\n    (pool connections: active=0 idle=0 limit=5)","kind":"mysql","code":45028,"message":"pool timeout: failed to retrieve a connection from pool after 10011ms\n    (pool connections: active=0 idle=0 limit=5)","state":"HY000","cause":"connect ECONNREFUSED ::1:3306"},"clientVersion":"7.4.0"}
+
+ {}
+
+ {}
+
+ {}
+
+ {}
+
+ {}
+
+ {}
+
+ {}
+
+ {}
+
+ {}
+
+ {}
+
+ {}
+
+ {}
+
+ {}
+
+ {"code":"P2025","meta":{"modelName":"travel_blog","operation":"an update"},"clientVersion":"7.4.0","name":"PrismaClientKnownRequestError"}
+
+ {}
+
+ {}
+
+ {}
+
+ {"code":"P2025","meta":{"modelName":"travel_blog","operation":"a delete"},"clientVersion":"7.4.0","name":"PrismaClientKnownRequestError"}
+
+ {"code":"P2025","meta":{"modelName":"travel_blog","operation":"a delete"},"clientVersion":"7.4.0","name":"PrismaClientKnownRequestError"}
+
+ {"code":"P2025","meta":{"modelName":"travel_blog","operation":"a delete"},"clientVersion":"7.4.0","name":"PrismaClientKnownRequestError"}
+
+ {"name":"DriverAdapterError","cause":{"originalCode":"45028","originalMessage":"pool timeout: failed to retrieve a connection from pool after 10002ms\n    (pool connections: active=0 idle=0 limit=5)","kind":"mysql","code":45028,"message":"pool timeout: failed to retrieve a connection from pool after 10002ms\n    (pool connections: active=0 idle=0 limit=5)","state":"HY000","cause":"connect ECONNREFUSED ::1:3306"},"clientVersion":"7.4.0"}
+
+ {"name":"PrismaClientValidationError","clientVersion":"7.4.0"}
+
+ {}
+
+ {"name":"PrismaClientValidationError","clientVersion":"7.4.0"}
+
+ {"name":"PrismaClientValidationError","clientVersion":"7.4.0"}
+
+ {"name":"PrismaClientValidationError","clientVersion":"7.4.0"}
+
+ {"name":"PrismaClientValidationError","clientVersion":"7.4.0"}
+
+ {"name":"PrismaClientValidationError","clientVersion":"7.4.0"}
+
+ {"name":"PrismaClientValidationError","clientVersion":"7.4.0"}
+
+ {"name":"DriverAdapterError","cause":{"originalCode":"45028","originalMessage":"pool timeout: failed to retrieve a connection from pool after 10001ms\n    (pool connections: active=0 idle=0 limit=5)","kind":"mysql","code":45028,"message":"pool timeout: failed to retrieve a connection from pool after 10001ms\n    (pool connections: active=0 idle=0 limit=5)","state":"HY000","cause":"connect ECONNREFUSED ::1:3306"},"clientVersion":"7.4.0"}
+
+ {"name":"PrismaClientValidationError","clientVersion":"7.4.0"}
+
+ {"name":"PrismaClientValidationError","clientVersion":"7.4.0"}
+
+ {"name":"DriverAdapterError","cause":{"originalCode":"45028","originalMessage":"pool timeout: failed to retrieve a connection from pool after 10008ms\n    (pool connections: active=0 idle=0 limit=5)","kind":"mysql","code":45028,"message":"pool timeout: failed to retrieve a connection from pool after 10008ms\n    (pool connections: active=0 idle=0 limit=5)","state":"HY000","cause":"connect ECONNREFUSED ::1:3306"},"clientVersion":"7.4.0"}
+
+ {"name":"PrismaClientValidationError","clientVersion":"7.4.0"}
+
+ {"name":"PrismaClientValidationError","clientVersion":"7.4.0"}
+
+ {"name":"PrismaClientValidationError","clientVersion":"7.4.0"}

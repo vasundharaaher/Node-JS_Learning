@@ -1,7 +1,8 @@
 import { loginSchema, registerSchema } from '#validation/auth.validation';
 import db from '#db';
 import bcrypt from 'bcryptjs';
-import jwt from 'jsonwebtoken';
+
+import { generateToken } from '#utils/helper';
 
 export const login = async (req) => {
         const payload = loginSchema.parse(req.body);
@@ -15,8 +16,7 @@ export const login = async (req) => {
                 userData &&
                 bcrypt.compareSync(payload.password, userData.password)
         ) {
-                delete userData.password;
-                const token = jwt.sign(userData, process.env.JWT_SECRET);
+                const token = generateToken(userData);
                 return token;
         }
 

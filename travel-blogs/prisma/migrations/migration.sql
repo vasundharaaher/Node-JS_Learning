@@ -5,6 +5,7 @@ CREATE TABLE `travel-blog` (
     `review` VARCHAR(200) NOT NULL,
     `user_id` INTEGER NULL,
     `pictures` VARCHAR(500) NOT NULL,
+    `cost` INTEGER NOT NULL,
 
     INDEX `user_id_idx`(`user_id`),
     PRIMARY KEY (`blog_id`)
@@ -23,6 +24,23 @@ CREATE TABLE `users` (
     PRIMARY KEY (`user_id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
+-- CreateTable
+CREATE TABLE `booking` (
+    `booking_id` INTEGER NOT NULL AUTO_INCREMENT,
+    `order_id` VARCHAR(200) NOT NULL,
+    `amount` DOUBLE NOT NULL,
+    `currency` VARCHAR(200) NOT NULL,
+    `receipt` VARCHAR(200) NULL,
+    `status` ENUM('created', 'attempted', 'paid') NULL,
+    `razorpay_payment_id` VARCHAR(200) NULL,
+    `razorpay_signature` VARCHAR(200) NULL,
+    `details` VARCHAR(200) NULL,
+    `blog_id` INTEGER NULL,
+    `user_id` INTEGER NULL,
+
+    PRIMARY KEY (`booking_id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
 -- AddForeignKey
-ALTER TABLE `travel-blog` ADD CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `users`(`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `travel-blog` ADD CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `users`(`user_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
