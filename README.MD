@@ -16,7 +16,9 @@ npm install
 ```
 ---
 - Run any file
-- node filename.js
+```bash
+node filename.js
+```
 ### 🛠️ Requirements
 Node.js (v14 or higher recommended)
 npm (comes with Node.js)
