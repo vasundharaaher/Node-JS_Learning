@@ -3,10 +3,12 @@
 - Clone the repository
 ```bash
 git clone https://github.com/vasundharaaher/Node-JS_Learning.git
+```
 ---
 - Navigate into the project
 ```bash
 cd Node-JS_Learning
+```
 ---
 - Install dependencies
 ```bash
