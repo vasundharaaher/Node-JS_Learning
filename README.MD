@@ -1,16 +1,19 @@
-⚙️ Installation & Setup
+### ⚙️ Installation & Setup
 Clone the repository
-#git clone https://github.com/vasundharaaher/Node-JS_Learning.git
+```bash
+git clone https://github.com/vasundharaaher/Node-JS_Learning.git
 Navigate into the project
-#cd Node-JS_Learning
+```bash
+cd Node-JS_Learning
 Install dependencies
-#npm install
+```bash
+npm install
 Run any file
 node filename.js
-🛠️ Requirements
+### 🛠️ Requirements
 Node.js (v14 or higher recommended)
 npm (comes with Node.js)
-📘 Learning Approach
+### 📘 Learning Approach
 
 This repository follows a hands-on learning approach:
 
