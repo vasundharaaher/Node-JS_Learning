@@ -7,12 +7,13 @@ git clone https://github.com/vasundharaaher/Node-JS_Learning.git
 ---
 - Navigate into the project
 ```bash
-cd Node-JS_Learning
+cd Node-JS_Learning/foldername
 ```
 ---
 - Install dependencies
 ```bash
 npm install
+```
 ---
 - Run any file
 - node filename.js
